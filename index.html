@@ -234,15 +234,41 @@
   .cert-inst { font-size: 0.82rem; font-weight: 300; color: var(--texto-muted); }
 
   /* ── DEPOIMENTOS placeholder ── */
+ <section class="depoimentos" id="depoimentos">
+  <div class="dep-inner">
+    <p class="section-eyebrow dep-eyebrow">Depoimentos</p>
+    <h2 class="dep-title">O que dizem os alunos</h2>
+    <div class="dep-card">
+      <p class="dep-texto">"Tive o meu primeiro contato com o yoga através do Denis e fui sua aluna por mais de dois anos — uma experiência que me conectou definitivamente com a prática. O Denis é um instrutor excepcional, que sabe equilibrar perfeitamente as orientações técnicas com um ritmo fluido, garantindo uma prática segura, consciente e muito prazerosa."</p>
+      <p class="dep-autor">— Marina Tarabay</p>
+    </div>
+  </div>
+</section>
   .depoimentos { background: var(--verde-escuro); padding: 6rem 5rem; }
   .dep-inner { max-width: 900px; margin: 0 auto; text-align: center; }
   .dep-eyebrow { color: var(--verde-claro); margin-bottom: 1rem; }
   .dep-title { font-family: var(--serif); font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 400; font-style: italic; color: var(--branco); margin-bottom: 1rem; }
-  .dep-placeholder {
-    font-size: 0.9rem; font-weight: 300; color: rgba(255,255,255,0.5);
-    border: 1px dashed rgba(255,255,255,0.2);
-    border-radius: 4px; padding: 2.5rem;
+  .dep-placeholder  .dep-card {
+    text-align: left;
+    background: rgba(255,255,255,0.06);
+    border-radius: 4px;
+    padding: 2rem 2.5rem;
     margin-top: 2rem;
+  }
+  .dep-texto {
+    font-family: var(--serif);
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 1.25rem;
+  }
+  .dep-autor {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: var(--verde-claro);
   }
 
   /* ── CONTATO ── */
